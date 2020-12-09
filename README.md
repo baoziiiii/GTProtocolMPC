@@ -69,7 +69,14 @@ In all secure 2-party or multi-party MPC solutions, the first step consists of t
 
 This transformation is usually accomplished either directly by a human or, much more preferably, **automatically** through so called circuit compilers.
 
+## Obliv-c
 https://github.com/samee/obliv-c
+
+```
+cd gc/million/
+oblivcc million.c million.oc -I .
+cycle './a.out 1 15 | ./a.out 2 10'
+```
 
 # Remarks
 
